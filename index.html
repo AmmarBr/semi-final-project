@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Noon'i</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/styles/globel.css">
+    <link rel="stylesheet" href="./assets/styles/index.css">
+
+</head>
+
+<body>
+
+    <!-- start header -->
+    <div class="col-12 bg-black ">
+        <div class="container d-flex justify-content-between  ">
+            <div class="text-white d-flex h-auto " id="top-nav">
+                <p>Up to 40% off Best-Selling Furniture.</p><a href="">shop now</a>
+            </div>
+            <div class="text-white d-sm-none d-lg-flex first-selction  ">
+                <select class="bg-black text-white border-0" aria-label="English">
+                    <option value="1" class="selector-lang">French</option>
+                    <option value="2" class="selector-lang">Deutsche</option>
+                    <option selected class="selector-lang">English</option>
+                </select>
+                <select class="bg-black text-white border-0" aria-label="English">
+                    <option value="1" class="selector-lang">USD</option>
+                    <option value="2" class="selector-lang">EUR</option>
+
+                </select>
+            </div>
+        </div>
+    </div>
+    <header class="col-12  ">
+        <nav class="container navigation ">
+            <div class="col-2 d-flex" style="gap: 20px;">
+                <img src="./assets/imgs/menu.png" alt="" class="burger-menu " type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                    id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasScrollingLabel"> </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body d-flex flex-column offcanvas-style">
+                        <a href="" class="nav-link active">Home</a>
+                        <a href="./pages/Shop.html" class="nav-link active">Shop</a>
+                        <a href="" class="nav-link active">Product</a>
+                        <a href="" class="nav-link active">About Us</a>
+                        <a href="" class="nav-link active">Contact Us</a>
+                    </div>
+                </div>
+                <img src="./assets/imgs/search-interface-symbol.png" alt="" class="search-interface" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Search for products (0)</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="input-group mb-3 f-icon-search">
+                            <input type="text" class="form-control" placeholder="Search"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <img src="./assets/imgs/search-interface-symbol.png" alt="" class="search-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="logo col-8 d-flex justify-content-center gap-2">
+                <img src="./assets/imgs/logo.png" alt="" class="logo">
+            </div>
+            <div class="left-icon d-flex justify-content-end col-2 gap-2 position-relative">
+                <div class="main-user-icon">
+                    <a href=""><img src="./assets/imgs/user.png" alt=""></a>
+                    <div class="user-icon">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Password</label>
+                        </div>
+                        <div class="d-flex justify-content-around">
+                            <button class="btn btn-dark me-md-2" type="button">SIGN IN</button>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Remember Me
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="./assets/imgs/heart.png" alt="">
+                <img src="./assets/imgs/shopping-cart.png" alt="">
+            </div>
+        </nav>
+    </header>
+    <!-- end header -->
+    <!-- start herooo -->
+    <div class="main-herooo">
+        <div id="carouselExampleCaptions" class="carousel slide container">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner ">
+                <div class="carousel-item active col-12 ">
+                    <div class="d-flex flex-row col-12 ">
+                        <div class=" col-6 d-flex flex-column justify-content-center  ">
+                            <h5>NEW ARRIVAL</h5>
+                            <h1 class="ml9">
+                                <span class="text-wrapper">
+                                    <span class="letters">Chairs & Seating You'll Love</span>
+                                </span>
+                            </h1>
+
+                            <p>Designer cher styles for every space-<samp>Free Shopping</samp></p>
+                            <link> shop now</link>
+
+                        </div>
+                        <img src="./assets/imgs/slide-1-home1-2.png" id="img-l11"
+                            class="col-6 img-l11 animate__animated animate__bounceInRight" alt="...">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex flex-row col-12 ">
+                        <div class=" col-6 d-flex flex-column justify-content-center ">
+                            <h5>First slide label</h5>
+                            <h1 class="ml9">
+                                <span class="text-wrapper">
+                                    <span class="letters">lamps & LITING great low Price</span>
+                                </span>
+                            </h1>
+                            <p>Designer cher styles for every space-<samp>Free Shopping</samp></p>
+                            <link> shop now</link>
+
+                        </div>
+                        <img src="./assets/imgs/slide-2-home1-1.png"
+                            class="col-6 img-l11 animate__animated animate__bounceInRight" alt="..."
+                            style="object-position: center; object-fit:contain ; max-width: 100%;">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex flex-row col-12 ">
+                        <div class=" col-6 d-flex flex-column justify-content-center ">
+                            <h5>First slide label</h5>
+                            <h1 class="ml9">
+                                <span class="text-wrapper">
+                                    <span class="letters">Discaver living Room Tables</span>
+                                </span>
+                            </h1>
+                            <p>Designer cher styles for every space-<samp>Free Shopping</samp></p>
+                            <link> shop now</link>
+
+                        </div>
+                        <img src="./assets/imgs/slide-3-home1-1.png"
+                            class="col-6 img-l11 animate__animated animate__bounceInRight" alt="..."
+                            style="object-position: center; object-fit:contain; max-width: 100%; ">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- secound  -->
+    <div class="container s-secshen">
+        <h3>SHOP BY CATEGORY</h3>
+        <div class="main-img-scrol col-12 object-fit-contain d-flex align-items-center  flex-wrap">
+            <div class="d-flex align-items-center justify-content-around  col-6 col-lg-3 ">
+                <div class="img-scrol">
+                    <img src="./assets/imgs/chair-1.jpg" alt="">
+                </div>
+                <div class="">
+                    <h5>cher</h5>
+                    <p>12 products</p>
+                </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-around  col-6 col-lg-3">
+                <div class="img-scrol">
+                    <img src="./assets/imgs/table.jpg" alt="">
+                </div>
+                <div class="">
+                    <h5>Table</h5>
+                    <p>5 products</p>
+                </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-around col-6 col-lg-3">
+                <div class="img-scrol">
+                    <img src="./assets/imgs/bed.jpg" alt="">
+                </div>
+                <div class="">
+                    <h5>Bad</h5>
+                    <p>7 products</p>
+                </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-around col-6 col-lg-3">
+                <div class="img-scrol">
+                    <img src="./assets/imgs/lamp-1.jpg" alt="">
+                </div>
+                <div class="">
+                    <h5>Lamp</h5>
+                    <p>7 products</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end secound -->
+    <!-- start therd -->
+    <div class="th-secshen col-12 d-flex container justify-content-between flex-wrap ">
+        <div class="th-secshen-lift col-12 col-lg-6 ">
+            <div class="th-lift-top col-12 order-2 order-lg-1 " style="overflow: hidden;">
+                <div class="position-absolute object-fit-contain">
+                    <h2>Up To 40% Off <br> Top lamp brands</h2>
+                    <a href="">SHOP NOW</a>
+                </div>
+                <img src="./assets/imgs/banner-0-removebg-preview.png" alt="" style="max-width: 100%; ">
+            </div>
+            <div class="th-lift-bot col-12  ">
+                <div class="position-absolute object-fit-contain ">
+                    <p>NEW PRODUCTS</p>
+                    <h2>up to 20% off Cabinets</h2>
+                    <a href="">SHOP NOW</a>
+                </div>
+                <img src="./assets/imgs/banner-1.jpg" alt="" style="max-width: 100%;">
+            </div>
+        </div>
+        <div class="th-secshen-right col-12 col-lg-6 order-1 order-lg-2 position-relative ">
+            <div class="position-absolute  d-flex flex-column col-4 align-items-center th-secshen-right-c">
+                <div>
+                    <p>BIG SAIL</p>
+                </div>
+                <div>
+                    <h2>Up To 70% Off Furniture & Decor</h2>
+                </div>
+                <div> <a href="">SHOP NOW</a></div>
+            </div>
+            <img src="./assets/imgs/banner-2.jpg" alt="" style="max-width: 100%;">
+
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="th-secshen-foot container d-flex align-items-center position-relative overflow-hidden ">
+            <span>10%</span>
+            <div class="th-secshen-foot-p">
+                <h2>Get More Pay Less</h2>
+                <p>On orders $500 + Use Coupon Code: WSD10</p>
+            </div>
+            <img src="./assets/imgs/banner-3-removebg-preview.png" alt="" class="position-absolute object-fit-contain ">
+        </div>
+    </div>
+
+    <!-- end therd -->
+    <!-- start card  -->
+
+
+    <div class="container col-12 d-flex flex-wrap">
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 d-flex flex-wrap">
+            <div class="d-flex align-items-center ">
+                <div class="col ">
+                    <div class="card f-card">
+                        <h1>Best <br> Modern Furniture</h1>
+                        <a href="">See All >></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="top-card1 position-relative">
+                        <div class="p-card-icon d-flex position-absolute ">
+                            <div class="card-icon ">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                        </div>
+
+                        <div class="s-card-icon d-flex position-absolute ">
+                            <div class="card-icon ">
+                                <i class="fa-solid fa-code-compare"></i>
+                            </div>
+                            <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                        </div>
+
+                        <div class="th-card-icon d-flex position-absolute ">
+                            <div class="card-icon ">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                        </div>
+                        <div class="d-flex position-absolute gap-2 p-2 ">
+                            <p
+                                style="z-index: 9; background-color: rgb(255, 0, 0); color: white; width: 50px; text-align: center;">
+                                Hot </p>
+                            <p
+                                style="z-index: 9; background-color: black; color: white; width: 50px; text-align: center;">
+                                sale </p>
+                        </div>
+                        <button>SELECT OPIONS</button>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Wood Outdoor Adirondack Chair</p>
+                        <p> $1,009 <samp
+                                style="text-decoration:line-through; font-size: 1rem; color: #0000005b;">$1,259</samp>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="top-card2 position-relative flex-row-reverse">
+                        <div class="p-card-icon d-flex position-absolute ">
+                            <div class="card-icon ">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                        </div>
+
+                        <div class="s-card-icon d-flex position-absolute ">
+                            <div class="card-icon ">
+                                <i class="fa-solid fa-code-compare"></i>
+                            </div>
+                            <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                        </div>
+
+                        <div class="th-card-icon d-flex position-absolute ">
+                            <div class="card-icon ">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                        </div>
+
+                        <button>SELECT OPIONS</button>
+                    </div>
+                    <div class="card-body">
+
+                        <p class="card-text">Solid Wood Bar Storage Cabinet</p>
+                        <p> $1,899
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="top-card3 position-relative flex-row-reverse">
+                        <div class="p-card-icon d-flex position-absolute ">
+                            <div class="card-icon ">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                        </div>
+
+                        <div class="s-card-icon d-flex position-absolute ">
+                            <div class="card-icon ">
+                                <i class="fa-solid fa-code-compare"></i>
+                            </div>
+                            <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                        </div>
+
+                        <div class="th-card-icon d-flex position-absolute ">
+                            <div class="card-icon ">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                        </div>
+
+                        <button>SELECT OPIONS</button>
+                    </div>
+
+
+
+
+                    <div class="card-body">
+
+
+                        <p class="card-text">Solid Wood Bed With Fabric Headboard</p>
+                        <p class="card-text">$3,707
+                            –
+                            $5,707</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="top-card4 position-relative flex-row-reverse">
+                        <div class="p-card-icon d-flex position-absolute ">
+                            <div class="card-icon ">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                        </div>
+
+                        <div class="s-card-icon d-flex position-absolute ">
+                            <div class="card-icon ">
+                                <i class="fa-solid fa-code-compare"></i>
+                            </div>
+                            <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                        </div>
+
+                        <div class="th-card-icon d-flex position-absolute ">
+                            <div class="card-icon ">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                        </div>
+
+                        <button>SELECT OPIONS</button>
+                    </div>
+
+
+
+
+
+                    <div class="card-body">
+
+                        <p class="card-text">Floor Lamp With Polyester Shade</p>
+                        <p class="card-text">$399</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="top-card5 position-relative flex-row-reverse">
+                        <div class="p-card-icon d-flex position-absolute ">
+                            <div class="card-icon ">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                        </div>
+
+                        <div class="s-card-icon d-flex position-absolute ">
+                            <div class="card-icon ">
+                                <i class="fa-solid fa-code-compare"></i>
+                            </div>
+                            <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                        </div>
+
+                        <div class="th-card-icon d-flex position-absolute ">
+                            <div class="card-icon ">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                        </div>
+
+                        <button>SELECT OPIONS</button>
+                    </div>
+
+
+
+                    <div class="card-body">
+
+                        <p class="card-text">Garden Chair With Armrests</p>
+                        <p class="card-text">$1,009</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="top-card6 position-relative flex-row-reverse">
+                        <div class="p-card-icon d-flex position-absolute ">
+                            <div class="card-icon ">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                        </div>
+
+                        <div class="s-card-icon d-flex position-absolute ">
+                            <div class="card-icon ">
+                                <i class="fa-solid fa-code-compare"></i>
+                            </div>
+                            <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                        </div>
+
+                        <div class="th-card-icon d-flex position-absolute ">
+                            <div class="card-icon ">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                        </div>
+
+                        <button>SELECT OPIONS</button>
+                    </div>
+
+
+
+
+                    <div class="card-body">
+
+                        <p class="card-text">Led Steel Floor Lamp</p>
+                        <p> $299<samp
+                                style="text-decoration:line-through; font-size: 1rem; color: #0000005b;">$429</samp>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="top-card7 position-relative flex-row-reverse">
+                        <div class="p-card-icon d-flex position-absolute ">
+                            <div class="card-icon ">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                        </div>
+
+                        <div class="s-card-icon d-flex position-absolute ">
+                            <div class="card-icon ">
+                                <i class="fa-solid fa-code-compare"></i>
+                            </div>
+                            <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                        </div>
+
+                        <div class="th-card-icon d-flex position-absolute ">
+                            <div class="card-icon ">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                        </div>
+
+                        <button>SELECT OPIONS</button>
+                    </div>
+                    <div class="card-body">
+
+                        <p class="card-text">Teak Garden Chair With Armrests</p>
+                        <p class="card-text">$999</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- end card -->
+    <!-- start  -->
+    <div class="container" style="margin-top: 60px;">
+        <div id="carouselExampleRide" class="carousel slide " data-bs-ride="true">
+            <div class="carousel-inner container">
+                <div class="carousel-item active  bg-white">
+                    <div class="d-flex s-carousel-s">
+                        <img src="./assets/imgs/blog-1-1174x862.jpg" class="d-block col-12 col-md-6" alt="...">
+                        <div class="col-12 col-md-12 col-lg-6 s-Carosel">
+                            <a href="">FURNITURE , TABLE</a>
+                            <a href="">
+                                <h1>The Secrets to a Living <br>Room that draws You In</h1>
+                            </a>
+                            <p>Nunc ut sem ut ex sollicitudin commodo. Suspendisse non enim felis. Nam nec diam
+                                ultricies, malesuada </p>
+                            <a href="">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item  bg-white">
+                    <div class="d-flex s-carousel-s">
+                        <img src="./assets/imgs/blog-2-1174x862.jpg" class="d-block col-12 col-md-6 " alt="...">
+                        <div class="col-12 col-md-12 col-lg-6 s-Carosel">
+                            <a href="" class="s-Carosel-f">kasbckabck , jksadcbkacb</a>
+                            <a href="" class="s-Carosel-2">
+                                <h1>What is Feng Shui and How Can I Use It When I Decorate?</h1>
+                            </a>
+                            <p>Nunc ut sem ut ex sollicitudin commodo. Suspendisse non enim felis. Nam nec diam
+                                ultricies, malesuada
+                            <p>
+                                <a href="" class="s-Carosel-3">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </div>
+
+
+    <!-- end  -->
+    <!-- stard vedio -->
+    <div class="video-container " style="margin-top: 100px;">
+        <video autoplay loop muted class="position-relative bg-black">
+            <source src="./assets/imgs/7708902-sd_960_506_25fps.mp4" type="video/mp4" class="background ">
+
+        </video>
+        <div class="position-absolute text-overlay ">
+
+            <h1>WOOD</h1>
+
+        </div>
+    </div>
+
+    <!--  end video-->
+
+    <!-- start footer  -->
+    <div class="container main-footer">
+        <div class="top-footer col-12 d-flex flex-column flex-md-row ">
+            <div class="first-top-footer col-12 col-md-2 d-flex flex-column justify-content-between">
+                <img src="./assets/imgs/logo.png" alt="" style="object-fit: contain; width: 70%; margin-bottom: 30px;">
+                <p>Text: +00(234)23-45-666</p>
+                <p>Mon – Fri: 8 am – 8 pm</p>
+                <p>Sat – Sun: 8 am – 7 pm</p>
+            </div>
+            <div class="secound-top-footer col-12 col-md-2 d-flex flex-column justify-content-between">
+                <h5>ABOUT</h5>
+                <a href="http://">Our Story</a>
+                <a href="http://">Careers</a>
+                <a href="http://">Influencers</a>
+                <a href="http://">Join our team</a>
+            </div>
+            <div class="therd-top-footer col-12 col-md-3 d-flex flex-column justify-content-between">
+                <h3>CUSTOMER SERVICES</h3>
+                <a href="http://">Contact Us </a>
+                <a href="http://">Customer Service</a>
+                <a href="http://">Find Store</a>
+                <a href="http://">Book appointment</a>
+                <a href="http://">Shipping & Returns</a>
+            </div>
+            <div class="last-top-footer col-12 col-md-4">
+                <h3>SIGN UP FOR EMAILS</h3>
+                <p>Enjoy 15% off* your first order when sign up to our newsletter</p>
+                <div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="your e-mail address"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-dark bg-black footer-btn " type="button"
+                            id="button-addon2">SUBSECRIBE</button>
+                    </div>
+                </div>
+                <div class="d-flex foorter-icon ">
+
+                    <img src="./assets/imgs/facebook.png" alt="">
+                    <img src="./assets/imgs/twitter.png" alt="">
+                    <img src="./assets/imgs/instagram.png" alt="">
+                    <img src="./assets/imgs/pinterest-logo.png" alt="">
+                    <font-awesome-icon :icon="['fab', 'pinterest']" />
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="bot-footer d-flex justify-content-between">
+
+            <div class="first-bot-footer d-flex gap-4">
+                <a href="">Privacy Policy</a>
+                <a href="" style="margin: 0 5px;">Help</a>
+                <a href="">FAQs</a>
+            </div>
+            <div class="secound-bot-footer">
+                <p>© Nooni. All Rights Reserved.</p>
+            </div>
+            <div class="last-bot-footer">
+                <img src="./assets/imgs/payment.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="./assets/styles/index.js"></script>
+</body>
+
+</html>

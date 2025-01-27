@@ -1,0 +1,434 @@
+.selector-lang {
+    background: var(--nooni-bg);
+    color: black;
+    font-size: 13px;
+}
+
+.first-selction select {
+    width: 100px;
+}
+
+.first-selction {
+    height: 100%;
+    margin-top: 5px;
+    width: 100px;
+}
+
+
+
+.offcanvas-style {
+    gap: 50px;
+    justify-content: center;
+    margin: 0 0 100px 50px;
+    font-size: 1.5rem;
+    font-weight: 700;
+
+}
+
+.user-icon {
+    position: absolute;
+    margin-top: 20px;
+    background-color: white;
+    width: 350px;
+    display: none;
+    padding: 30px;
+    right: 0;
+    z-index: 20;
+    height: 300px;
+    color: #000;
+
+
+}
+
+.left-icon:hover .user-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+header {
+    height: 10vh;
+    background-color: white;
+    padding: 35px;
+    border-bottom: rgba(0, 0, 0, 0.213) solid 1px;
+
+
+}
+
+.navigation {
+    display: flex;
+
+}
+
+.burger-menu {
+    height: 24px;
+}
+
+.search-interface {
+    height: 20px;
+}
+
+.logo {
+    height: 34px;
+
+}
+
+.left-icon {
+    height: 24px;
+
+}
+
+.left-icon img {
+    height: 100%;
+}
+
+.f-icon-search {
+    position: relative;
+
+}
+
+.search-icon {
+    position: absolute;
+    width: 22px;
+    right: 10px;
+    top: 10px;
+    z-index: 9000;
+}
+
+#carouselExampleCaptions {
+    background-color: var(--nooni-bg);
+}
+
+#slider {
+    display: flex;
+}
+
+#slider-img1 {
+
+    width: 50%;
+}
+
+#slider-p1 {
+
+    color: black;
+}
+
+.img-scrol img {
+    height: 150px;
+    border-radius: 50%;
+}
+
+.img-scrol img :hover {
+    height: 200px;
+    border-radius: 25%;
+}
+
+.selchion-size {
+    display: none;
+    height: auto;
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.selchion-size ul {
+    top: 15px;
+    z-index: 9;
+    width: 300px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.selchion-size ul li{
+    text-decoration: none;
+}
+
+.selchion:hover .selchion-size {
+    display: flex;
+}
+
+.f-card {
+    border: 0;
+    color: #000;
+}
+
+.f-card h1 {
+    font-size: 4rem;
+
+}
+
+.f-card a {
+    border: 0;
+    color: #000;
+    text-decoration: none;
+}
+
+.card button {
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    border: 0;
+    background-color: white;
+}
+
+.card:hover button {
+    display: block;
+
+}
+
+.card button:hover {
+    background-color: red;
+}
+
+.top-card1 {
+    height: 389px;
+    width: 100%;
+    object-fit: contain;
+    background-size: contain;
+    background-image: url(../imgs/01-450x572.jpg);
+    background-repeat: no-repeat;
+}
+
+.top-card1:hover {
+    background-image: url(../imgs/01-2-450x572.jpg);
+    background-repeat: no-repeat;
+}
+
+.top-card2 {
+    height: 389px;
+    width: 100%;
+    object-fit: contain;
+    background-size: contain;
+    background-image: url(../imgs/08-450x572.jpg);
+    background-repeat: no-repeat;
+}
+
+.top-card2:hover {
+    background-image: url(../imgs/10-450x572.jpg);
+    background-repeat: no-repeat;
+}
+
+.top-card3 {
+    height: 389px;
+    width: 100%;
+    object-fit: contain;
+    background-size: contain;
+    background-image: url(../imgs/13-450x572.jpg);
+    background-repeat: no-repeat;
+}
+
+.top-card3:hover {
+    background-image: url(../imgs/13-2-450x572.jpg);
+    background-repeat: no-repeat;
+}
+
+.top-card4 {
+    height: 389px;
+    width: 100%;
+    object-fit: contain;
+    background-size: contain;
+    background-image: url(../imgs/27-450x572.jpg);
+    background-repeat: no-repeat;
+}
+
+.top-card4:hover {
+    background-image: url(../imgs/26-450x572.jpg);
+    background-repeat: no-repeat;
+}
+
+.top-card5 {
+    height: 389px;
+    width: 100%;
+    object-fit: contain;
+    background-size: contain;
+    background-image: url(../imgs/02-450x572.jpg);
+    background-repeat: no-repeat;
+}
+
+.top-card5:hover {
+    background-image: url(../imgs/02-4-450x572.jpg);
+    background-repeat: no-repeat;
+}
+
+.top-card6 {
+    height: 389px;
+    width: 100%;
+    object-fit: contain;
+    background-size: contain;
+    background-image: url(../imgs/22-450x572.jpg);
+    background-repeat: no-repeat;
+}
+
+.top-card6:hover {
+    background-image: url(../imgs/26-450x572.jpg);
+    background-repeat: no-repeat;
+}
+
+.card-body {
+    max-height: 96px;
+    font-size: 14px;
+}
+
+.top-card7 {
+    height: 389px;
+    width: 100%;
+    object-fit: contain;
+    background-size: contain;
+    background-image: url(../imgs/34-450x572.jpg);
+    background-repeat: no-repeat;
+}
+
+.top-card7:hover {
+    background-image: url(../imgs/06-450x572.jpg);
+    background-repeat: no-repeat;
+}
+
+.p-card-icon {
+    flex-direction: row-reverse;
+    gap: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+}
+
+.card .p-card-icon i {
+    font-size: 30px;
+
+}
+
+.s-card-icon {
+    flex-direction: row-reverse;
+    gap: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    z-index: -1;
+    display: none;
+}
+
+.th-card-icon {
+    flex-direction: row-reverse;
+    gap: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    z-index: -1;
+    display: none;
+}
+
+.card:hover .s-card-icon {
+    display: block;
+    z-index: 1;
+    bottom: 110px;
+}
+
+.card:hover .th-card-icon {
+    display: block;
+    z-index: 1;
+    bottom: 160px;
+}
+
+.card-icon {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: stroke;
+}
+
+.p-card-icon p {
+    display: none;
+}
+
+.s-card-icon p {
+    display: none;
+}
+
+.th-card-icon p {
+    display: none;
+}
+
+.card:hover .p-card-icon {
+    bottom: 60px;
+
+}
+
+.p-card-icon:hover p {
+    display: block;
+}
+
+.s-card-icon:hover p {
+    display: block;
+}
+
+.th-card-icon:hover p {
+    display: block;
+}
+
+.p-card-icon:hover .card-icon,
+.p-card-icon:hover p {
+    background-color: red;
+
+}
+
+.s-card-icon:hover .card-icon,
+.s-card-icon:hover p {
+    background-color: red;
+}
+
+.th-card-icon:hover .card-icon,
+.th-card-icon:hover p {
+    background-color: red;
+}
+
+
+
+.card .p-card-icon i {
+    font-size: 30px;
+
+}
+
+.card {
+    border: 0;
+}
+
+.main-footer {
+    margin-top: 100px;
+}
+
+.main-footer .top-footer {
+    margin-bottom: 100px;
+}
+
+.foorter-icon {
+    gap: 20px;
+    height: 20px;
+}
+
+.footer-btn {
+    color: white;
+}
+
+.footer-btn:hover {
+    background-color: red !important;
+    border: 0;
+}
+
+.first-bot-footer a {
+    color: rgba(0, 0, 0, 0.557);
+    text-decoration: none;
+}
+.top-footer a {
+    color: rgba(0, 0, 0, 0.557);
+    text-decoration: none;
+}

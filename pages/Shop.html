@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/styles/globel.css">
+    <link rel="stylesheet" href="../assets/styles/Shop.css">
+</head>
+
+<body>
+    <!-- start header -->
+    <div class="col-12 bg-black ">
+        <div class="container d-flex justify-content-between  ">
+            <div class="text-white d-flex h-auto " id="top-nav">
+                <p>Up to 40% off Best-Selling Furniture.</p><a href="">shop now</a>
+            </div>
+            <div class="text-white d-sm-none d-lg-flex first-selction  ">
+                <select class="bg-black text-white border-0" aria-label="English">
+                    <option value="1" class="selector-lang">French</option>
+                    <option value="2" class="selector-lang">Deutsche</option>
+                    <option selected class="selector-lang">English</option>
+                </select>
+                <select class="bg-black text-white border-0" aria-label="English">
+                    <option value="1" class="selector-lang">USD</option>
+                    <option value="2" class="selector-lang">EUR</option>
+
+                </select>
+            </div>
+        </div>
+    </div>
+    <header class="col-12  ">
+        <nav class="container navigation ">
+            <div class="col-2 d-flex" style="gap: 20px;">
+                <img src="../assets/imgs/menu.png" alt="" class="burger-menu " type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                    id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasScrollingLabel"> </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body d-flex flex-column offcanvas-style">
+                        <a href="" class="nav-link active">Home</a>
+                        <a href="" class="nav-link active">Shop</a>
+                        <a href="" class="nav-link active">Product</a>
+                        <a href="" class="nav-link active">About Us</a>
+                        <a href="" class="nav-link active">Contact Us</a>
+                    </div>
+                </div>
+                <img src="../assets/imgs/search-interface-symbol.png" alt="" class="search-interface" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Search for products (0)</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="input-group mb-3 f-icon-search">
+                            <input type="text" class="form-control" placeholder="Search"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <img src="../assets/imgs/search-interface-symbol.png" alt="" class="search-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="logo col-8 d-flex justify-content-center gap-2">
+                <img src="../assets/imgs/logo.png" alt="" class="logo">
+            </div>
+            <div class="left-icon d-flex justify-content-end col-2 gap-2 position-relative">
+                <div class="main-user-icon">
+                    <a href=""><img src="../assets/imgs/user.png" alt=""></a>
+                    <div class="user-icon">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Password</label>
+                        </div>
+                        <div class="d-flex justify-content-around">
+                            <button class="btn btn-dark me-md-2" type="button">SIGN IN</button>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Remember Me
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="../assets/imgs/heart.png" alt="">
+                <img src="../assets/imgs/shopping-cart.png" alt="">
+            </div>
+        </nav>
+    </header>
+    <div class="container d-flex align-items-end justify-content-center " style="height: 10vh">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Shop</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="container d-flex align-items-center justify-content-center">
+        <h2>Shop</h2>
+    </div>
+    <!-- end header -->
+    <div class="container s-secshen ">
+
+        <div class="main-img-scrol col-12 object-fit-contain d-flex align-items-center  flex-wrap">
+            <div class="d-flex align-items-center justify-content-around  col-6 col-lg-3 ">
+                <div class="img-scrol">
+                    <img src="../assets/imgs/chair-1.jpg" alt="">
+                </div>
+                <div class="">
+                    <h5>cher</h5>
+                    <p>12 products</p>
+                </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-around  col-6 col-lg-3">
+                <div class="img-scrol">
+                    <img src="../assets/imgs/table.jpg" alt="">
+                </div>
+                <div class="">
+                    <h5>Table</h5>
+                    <p>5 products</p>
+                </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-around col-6 col-lg-3">
+                <div class="img-scrol">
+                    <img src="../assets/imgs/bed.jpg" alt="">
+                </div>
+                <div class="">
+                    <h5>Bad</h5>
+                    <p>7 products</p>
+                </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-around col-6 col-lg-3">
+                <div class="img-scrol">
+                    <img src="../assets/imgs/lamp-1.jpg" alt="">
+                </div>
+                <div class="">
+                    <h5>Lamp</h5>
+                    <p>7 products</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end header -->
+    <!-- start herooo shop -->
+    <div class="container">
+        <hr style="margin:50px 0 ;">
+    </div>
+    <div class="container main-hero d-flex  ">
+
+        <aside class="col-3 d-flex flex-column gap-3">
+            <h4 class="col-12 " style="height: 50px; background-color: var(--nooni-bg); padding: 10px;">Type</h4>
+            <div class="d-flex flex-column gap-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Bed(7)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Bedroom Furniture(18)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Cabinet(5)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Chair(12)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Dining & Kitchen(25)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Home Office(23)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Lamp(7)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Living Room(24)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        New & Now(33)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Outdoor Lounge(23)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Sofa(8)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Table(5)
+                    </label>
+                </div>
+
+            </div>
+            <h4 class="col-12 " style="height: 50px; background-color: var(--nooni-bg); padding: 10px;">Color</h4>
+            <div class="d-flex flex-column gap-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Beige (12)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Black (5)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Blue (3)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Brown (6)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Chacoal (6)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Gold (3)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Green (8)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Pink (2)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Slate Grey (5)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Teak (9)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        White (6)
+                    </label>
+                </div>
+
+
+            </div>
+            <h4 class="col-12 " style="height: 50px; background-color: var(--nooni-bg); padding: 10px;">Price</h4>
+            <div class="d-flex flex-column gap-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        $500 & Under
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        $500 - $999
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        $1,000 - $1,999
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        $2,000 - $5,000
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        $5,000 & Over
+                    </label>
+                </div>
+            </div>
+            <h4 class="col-12 " style="height: 50px; background-color: var(--nooni-bg); padding: 10px;">Material</h4>
+            <div class="d-flex flex-column gap-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Concrete (3)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Fleece (2)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Glass (6)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Leather (3)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Marble (4)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Metal (15)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Velvet (9)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Wood (22)
+                    </label>
+                </div>
+            </div>
+            <h4 class="col-12 " style="height: 50px; background-color: var(--nooni-bg); padding: 10px;">Size</h4>
+            <div class="d-flex flex-column gap-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        1-Seat (1)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        2-Seats (1)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        3-Seats (1)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        DEuro Sham (11)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        King (7)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        One Size (4)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Queen (5)
+                    </label>
+                </div>
+            </div>
+            <h4 class="col-12 " style="height: 50px; background-color: var(--nooni-bg); padding: 10px;">Patterns &
+                Textures</h4>
+            <div class="d-flex flex-column gap-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Abstract (3)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Floral (2)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Geometric (5)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Patterned (6)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Solid (20)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Textured (11)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Whimsical (10)
+                    </label>
+                </div>
+            </div>
+        </aside>
+        <div class=" col-9 d-flex flex-wrap ">
+            <div class="col-12 d-flex justify-content-between" style="max-height: 50px;">
+                <div class="d-flex col-1 " style="height: 50px;">
+                    <a href=""><img src="../assets/imgs/view.png" alt="" class="h-50"></a>
+                    <a href=""><img src="../assets/imgs/grid.png" alt="" class="h-50"></a>
+                </div>
+                <div class=" col-11 d-flex justify-content-end gap-3">
+                    <div class="form-check h-100 d-flex align-items-center col-4 "
+                        style="background-color: var(--nooni-bg);">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Show only products on sale
+                        </label>
+                    </div>
+                    <div class=" d-flex col-4 selchion" style="width: 300px;">
+
+                        <div class="  col-12 d-flex align-items-center  justify-content-between  "
+                            style="background-color: var(--nooni-bg);">Sort by latest <a href="">
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <div class="col-2 position-relative  selchion-size">
+                                    <ul class="bg-white position-absolute col-12 " style="top: 15px;
+                                        z-index: 9; width: 300px;right: 0;">
+                                        <li>Sort by popularity</li>
+                                        <li>Sort by average rating</li>
+                                        <li>Sort by latest</li>
+                                        <li>Sort by price: low to high</li>
+                                        <li>Sort by price: high to low</li>
+                                    </ul>
+                                </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-3  d-flex flex-wrap">
+                <div class="col">
+                    <div class="card">
+                        <div class="top-card1 position-relative">
+                            <div class="p-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <div class="s-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-solid fa-code-compare"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <div class="th-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+                            <div class="d-flex position-absolute gap-2 p-2 ">
+                                <p
+                                    style="z-index: 9; background-color: rgb(255, 0, 0); color: white; width: 50px; text-align: center;">
+                                    Hot </p>
+                                <p
+                                    style="z-index: 9; background-color: black; color: white; width: 50px; text-align: center;">
+                                    sale </p>
+                            </div>
+                            <button>SELECT OPIONS</button>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Wood Outdoor Adirondack Chair</p>
+                            <p> $1,009 <samp
+                                    style="text-decoration:line-through; font-size: 1rem; color: #0000005b;">$1,259</samp>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="top-card2 position-relative flex-row-reverse">
+                            <div class="p-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <div class="s-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-solid fa-code-compare"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <div class="th-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <button>SELECT OPIONS</button>
+                        </div>
+                        <div class="card-body">
+
+                            <p class="card-text">Solid Wood Bar Storage Cabinet</p>
+                            <p> $1,899
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="top-card3 position-relative flex-row-reverse">
+                            <div class="p-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <div class="s-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-solid fa-code-compare"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <div class="th-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <button>SELECT OPIONS</button>
+                        </div>
+
+
+
+
+                        <div class="card-body">
+
+
+                            <p class="card-text">Solid Wood Bed With Fabric Headboard</p>
+                            <p class="card-text">$3,707
+                                –
+                                $5,707</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="top-card4 position-relative flex-row-reverse">
+                            <div class="p-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <div class="s-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-solid fa-code-compare"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <div class="th-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <button>SELECT OPIONS</button>
+                        </div>
+
+
+
+
+
+                        <div class="card-body">
+
+                            <p class="card-text">Floor Lamp With Polyester Shade</p>
+                            <p class="card-text">$399</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="top-card5 position-relative flex-row-reverse">
+                            <div class="p-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <div class="s-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-solid fa-code-compare"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <div class="th-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <button>SELECT OPIONS</button>
+                        </div>
+
+
+
+                        <div class="card-body">
+
+                            <p class="card-text">Garden Chair With Armrests</p>
+                            <p class="card-text">$1,009</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="top-card6 position-relative flex-row-reverse">
+                            <div class="p-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <div class="s-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-solid fa-code-compare"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <div class="th-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <button>SELECT OPIONS</button>
+                        </div>
+
+
+
+
+                        <div class="card-body">
+
+                            <p class="card-text">Led Steel Floor Lamp</p>
+                            <p> $299<samp
+                                    style="text-decoration:line-through; font-size: 1rem; color: #0000005b;">$429</samp>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="top-card7 position-relative flex-row-reverse">
+                            <div class="p-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <div class="s-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-solid fa-code-compare"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <div class="th-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <button>SELECT OPIONS</button>
+                        </div>
+                        <div class="card-body">
+
+                            <p class="card-text">Teak Garden Chair With Armrests</p>
+                            <p class="card-text">$999</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="top-card2 position-relative flex-row-reverse">
+                            <div class="p-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <div class="s-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-solid fa-code-compare"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <div class="th-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <button>SELECT OPIONS</button>
+                        </div>
+                        <div class="card-body">
+
+                            <p class="card-text">Solid Wood Bar Storage Cabinet</p>
+                            <p> $1,899
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="top-card2 position-relative flex-row-reverse">
+                            <div class="p-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <div class="s-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-solid fa-code-compare"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <div class="th-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <button>SELECT OPIONS</button>
+                        </div>
+                        <div class="card-body">
+
+                            <p class="card-text">Solid Wood Bar Storage Cabinet</p>
+                            <p> $1,899
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="top-card2 position-relative flex-row-reverse">
+                            <div class="p-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <div class="s-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-solid fa-code-compare"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <div class="th-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <button>SELECT OPIONS</button>
+                        </div>
+                        <div class="card-body">
+
+                            <p class="card-text">Solid Wood Bar Storage Cabinet</p>
+                            <p> $1,899
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="top-card2 position-relative flex-row-reverse">
+                            <div class="p-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <div class="s-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-solid fa-code-compare"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <div class="th-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <button>SELECT OPIONS</button>
+                        </div>
+                        <div class="card-body">
+
+                            <p class="card-text">Solid Wood Bar Storage Cabinet</p>
+                            <p> $1,899
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="top-card2 position-relative flex-row-reverse">
+                            <div class="p-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <div class="s-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-solid fa-code-compare"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <div class="th-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <button>SELECT OPIONS</button>
+                        </div>
+                        <div class="card-body">
+
+                            <p class="card-text">Solid Wood Bar Storage Cabinet</p>
+                            <p> $1,899
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="top-card2 position-relative flex-row-reverse">
+                            <div class="p-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <div class="s-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-solid fa-code-compare"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <div class="th-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <button>SELECT OPIONS</button>
+                        </div>
+                        <div class="card-body">
+
+                            <p class="card-text">Solid Wood Bar Storage Cabinet</p>
+                            <p> $1,899
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="top-card2 position-relative flex-row-reverse">
+                            <div class="p-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <div class="s-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-solid fa-code-compare"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <div class="th-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <button>SELECT OPIONS</button>
+                        </div>
+                        <div class="card-body">
+
+                            <p class="card-text">Solid Wood Bar Storage Cabinet</p>
+                            <p> $1,899
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="top-card2 position-relative flex-row-reverse">
+                            <div class="p-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <div class="s-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-solid fa-code-compare"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <div class="th-card-icon d-flex position-absolute ">
+                                <div class="card-icon ">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <p style="text-align: center; padding: 5px; border-radius: 10px;">gsdgs</p>
+                            </div>
+
+                            <button>SELECT OPIONS</button>
+                        </div>
+                        <div class="card-body">
+
+                            <p class="card-text">Solid Wood Bar Storage Cabinet</p>
+                            <p> $1,899
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end herooo shop -->
+     <!-- start  -->
+    <nav aria-label="Page navigation example" style="margin-bottom: 100px;">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+      <hr>
+      <!-- end -->
+      <div class="container main-footer">
+        <div class="top-footer col-12 d-flex flex-column flex-md-row ">
+            <div class="first-top-footer col-12 col-md-2 d-flex flex-column justify-content-between">
+                <img src="../assets/imgs/logo.png" alt="" style="object-fit: contain; width: 70%; margin-bottom: 30px;">
+                <p>Text: +00(234)23-45-666</p>
+                <p>Mon – Fri: 8 am – 8 pm</p>
+                <p>Sat – Sun: 8 am – 7 pm</p>
+            </div>
+            <div class="secound-top-footer col-12 col-md-2 d-flex flex-column justify-content-between">
+                <h5>ABOUT</h5>
+                <a href="http://">Our Story</a>
+                <a href="http://">Careers</a>
+                <a href="http://">Influencers</a>
+                <a href="http://">Join our team</a>
+            </div>
+            <div class="therd-top-footer col-12 col-md-3 d-flex flex-column justify-content-between">
+                <h3>CUSTOMER SERVICES</h3>
+                <a href="http://">Contact Us </a>
+                <a href="http://">Customer Service</a>
+                <a href="http://">Find Store</a>
+                <a href="http://">Book appointment</a>
+                <a href="http://">Shipping & Returns</a>
+            </div>
+            <div class="last-top-footer col-12 col-md-4">
+                <h3>SIGN UP FOR EMAILS</h3>
+                <p>Enjoy 15% off* your first order when sign up to our newsletter</p>
+                <div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="your e-mail address"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-dark bg-black footer-btn " type="button"
+                            id="button-addon2">SUBSECRIBE</button>
+                    </div>
+                </div>
+                <div class="d-flex foorter-icon ">
+
+                    <img src="../assets/imgs/facebook.png" alt="">
+                    <img src="../assets/imgs/twitter.png" alt="">
+                    <img src="../assets/imgs/instagram.png" alt="">
+                    <img src="../assets/imgs/pinterest-logo.png" alt="">
+                    <font-awesome-icon :icon="['fab', 'pinterest']" />
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="bot-footer d-flex justify-content-between">
+
+            <div class="first-bot-footer d-flex gap-4">
+                <a href="">Privacy Policy</a>
+                <a href="" style="margin: 0 5px;">Help</a>
+                <a href="">FAQs</a>
+            </div>
+            <div class="secound-bot-footer">
+                <p>© Nooni. All Rights Reserved.</p>
+            </div>
+            <div class="last-bot-footer">
+                <img src="../assets/imgs/payment.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
