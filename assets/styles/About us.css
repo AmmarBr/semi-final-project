@@ -1,0 +1,285 @@
+.selector-lang {
+    background: var(--nooni-bg);
+    color: black;
+    font-size: 13px;
+}
+
+.first-selction select {
+    width: 100px;
+}
+
+.first-selction {
+    height: 100%;
+    margin-top: 5px;
+    width: 100px;
+}
+
+
+
+.offcanvas-style {
+    gap: 50px;
+    justify-content: center;
+    margin: 0 0 100px 50px;
+    font-size: 1.5rem;
+    font-weight: 700;
+
+}
+
+.user-icon {
+    position: absolute;
+    margin-top: 20px;
+    background-color: white;
+    width: 350px;
+    display: none;
+    padding: 30px;
+    right: 0;
+    z-index: 20;
+    height: 300px;
+    color: #000;
+
+
+}
+
+.left-icon:hover .user-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+header {
+    height: 10vh;
+    background-color: white;
+    padding: 35px;
+    border-bottom: rgba(0, 0, 0, 0.213) solid 1px;
+
+
+}
+
+.navigation {
+    display: flex;
+
+}
+
+.burger-menu {
+    height: 24px;
+}
+
+.search-interface {
+    height: 20px;
+}
+
+.logo {
+    height: 34px;
+
+}
+
+.left-icon {
+    height: 24px;
+
+}
+
+.left-icon img {
+    height: 100%;
+}
+
+.f-icon-search {
+    position: relative;
+
+}
+
+.search-icon {
+    position: absolute;
+    width: 22px;
+    right: 10px;
+    top: 10px;
+    z-index: 9000;
+}
+
+#carouselExampleCaptions {
+    background-color: var(--nooni-bg);
+}
+
+#slider {
+    display: flex;
+}
+
+#slider-img1 {
+
+    width: 50%;
+}
+
+#slider-p1 {
+
+    color: black;
+}
+
+.about-p p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #0000009e;
+}
+
+.bac-img {
+    height: 900px;
+    background-image: url(../imgs/about-parallax-1.jpg);
+    margin-bottom: 100px;
+    object-fit: contain;
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.left-img {
+
+    overflow: hidden;
+}
+
+.left-img img {
+    width: 100%;
+
+}
+
+.left-img:hover img {
+    transition: ease all 500ms;
+    transform: scale(1.1);
+}
+
+.card {
+    border: 0;
+    text-align: center;
+    overflow: hidden;
+
+}
+.card-im {
+
+    overflow: hidden;
+}
+.card:hover img {
+    transition: ease all 500ms;
+    transform: scale(1.1);
+}
+.card-body p {
+    font-weight: 700;
+}
+
+.card-body h4 {
+    color: #0000008b;
+    cursor: pointer;
+    transition: ease all 500ms;
+}
+
+.card-body h4:hover {
+    color: #ff00008b;
+}
+
+/* .card-im:hover .text-overlay{
+    display: flex !important;
+} */
+.text-overlay {
+    background-color: #00000047;
+    position: relative;
+    width: 100%;
+    height: 75.7%;
+    display: flex !important;
+    justify-content: center;
+    overflow: hidden;
+    align-content: center;
+    align-items: center;
+    align-items: end;
+}
+
+.text-overlay i {
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.text-overlay i:hover {
+    color: red;
+    cursor: pointer;
+}
+
+/*  */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: url('../imgs/about-2.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 100px;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: white;
+    color: black;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 0;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ff0000;
+}
+.main-footer {
+    margin-top: 100px;
+}
+
+.main-footer .top-footer {
+    margin-bottom: 100px;
+}
+
+.foorter-icon {
+    gap: 20px;
+    height: 20px;
+}
+
+.footer-btn {
+    color: white;
+}
+
+.footer-btn:hover {
+    background-color: red !important;
+    border: 0;
+}
+
+.first-bot-footer a {
+    color: rgba(0, 0, 0, 0.557);
+    text-decoration: none;
+}
+.top-footer a {
+    color: rgba(0, 0, 0, 0.557);
+    text-decoration: none;
+}

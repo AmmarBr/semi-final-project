@@ -196,6 +196,7 @@ header {
     background-repeat: no-repeat;
 
 }
+
 .carousel-indicators .active {
     opacity: 1 !important;
 }
@@ -342,19 +343,20 @@ li span {
     font-weight: bold;
 }
 
-.b-add{
+.b-add {
     background-color: #999999;
     margin-top: 20px;
     border-radius: 0;
     color: white;
     border: 0;
 }
-.b-add:hover{
+
+.b-add:hover {
     background-color: #878080;
-    
+
 }
 
-.p-buy{
+.p-buy {
     margin-top: 20px;
     border: 1px solid black;
     color: #000;
@@ -364,30 +366,267 @@ li span {
     padding-top: 10px;
     cursor: pointer;
 }
-.p-buy:hover{
+
+.p-buy:hover {
     border: 1px solid red;
     color: red;
-    cursor:not-allowed;
+    cursor: not-allowed;
 }
-.ditals{
+
+.ditals {
     margin-top: 100px;
     height: 65px;
     gap: 10px;
 }
-.ditals h2:first-child{
+
+.ditals h2:first-child {
     padding: 5px;
     background-color: var(--nooni-bg);
 }
-.ditals h2{
+
+.ditals h2 {
     height: 75px;
     width: 270px;
     cursor: pointer;
     text-align: center;
 }
-.ditals h2:hover{
+
+.ditals h2:hover {
     background-color: var(--nooni-bg);
 }
 
-.prod-dim p span{
+.prod-dim p span {
     color: #0000005d;
+}
+
+.th-secshen-foot:hover img {
+    transform: translate(0, 50px);
+}
+
+.f-card {
+    border: 0;
+    color: #000;
+}
+
+.f-card h1 {
+    font-size: 4rem;
+
+}
+
+.f-card a {
+    border: 0;
+    color: #000;
+    text-decoration: none;
+}
+
+.card button {
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    border: 0;
+    background-color: white;
+}
+
+.card:hover button {
+    display: block;
+
+}
+
+.card button:hover {
+    background-color: red;
+}
+
+.top-card1 {
+    height: 386px;
+    width: 100%;
+    object-fit: contain;
+    background-size: contain;
+    background-image: url(../imgs/01-450x572.jpg);
+    background-repeat: no-repeat;
+}
+
+.top-card1:hover {
+    background-image: url(../imgs/01-2-450x572.jpg);
+    background-repeat: no-repeat;
+}
+
+.top-card2 {
+    height: 386px;
+    width: 100%;
+    object-fit: contain;
+    background-size: contain;
+    background-image: url(../imgs/08-450x572.jpg);
+    background-repeat: no-repeat;
+}
+
+.top-card2:hover {
+    background-image: url(../imgs/10-450x572.jpg);
+    background-repeat: no-repeat;
+}
+
+.top-card3 {
+    height: 386px;
+    width: 100%;
+    object-fit: contain;
+    background-size: contain;
+    background-image: url(../imgs/13-450x572.jpg);
+    background-repeat: no-repeat;
+}
+
+.top-card3:hover {
+    background-image: url(../imgs/13-2-450x572.jpg);
+    background-repeat: no-repeat;
+}
+
+.top-card4 {
+    height: 386px;
+    width: 100%;
+    object-fit: contain;
+    background-size: contain;
+    background-image: url(../imgs/27-450x572.jpg);
+    background-repeat: no-repeat;
+}
+
+.top-card4:hover {
+    background-image: url(../imgs/26-450x572.jpg);
+    background-repeat: no-repeat;
+}
+
+.s-card-icon {
+    flex-direction: row-reverse;
+    gap: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    z-index: -1;
+    display: none;
+}
+
+.th-card-icon {
+    flex-direction: row-reverse;
+    gap: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    z-index: -1;
+    display: none;
+}
+
+.card:hover .s-card-icon {
+    display: block;
+    z-index: 1;
+    bottom: 110px;
+}
+
+.card:hover .th-card-icon {
+    display: block;
+    z-index: 1;
+    bottom: 160px;
+}
+
+.card-icon {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: stroke;
+}
+
+.p-card-icon p {
+    display: none;
+}
+
+.s-card-icon p {
+    display: none;
+}
+
+.th-card-icon p {
+    display: none;
+}
+
+.card:hover .p-card-icon {
+    bottom: 60px;
+
+}
+
+.p-card-icon:hover p {
+    display: block;
+}
+
+.s-card-icon:hover p {
+    display: block;
+}
+
+.th-card-icon:hover p {
+    display: block;
+}
+
+.p-card-icon:hover .card-icon,
+.p-card-icon:hover p {
+    background-color: red;
+
+}
+
+.s-card-icon:hover .card-icon,
+.s-card-icon:hover p {
+    background-color: red;
+}
+
+.th-card-icon:hover .card-icon,
+.th-card-icon:hover p {
+    background-color: red;
+}
+
+
+
+.card .p-card-icon i {
+    font-size: 30px;
+
+}
+.p-card-icon {
+    flex-direction: row-reverse;
+    gap: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+}
+.card-body {
+    max-height: 96px;
+    font-size: 14px;
+}
+.main-footer {
+    margin-top: 100px;
+}
+
+.main-footer .top-footer {
+    margin-bottom: 100px;
+}
+
+.foorter-icon {
+    gap: 20px;
+    height: 20px;
+}
+
+.footer-btn {
+    color: white;
+}
+
+.footer-btn:hover {
+    background-color: red !important;
+    border: 0;
+}
+
+.first-bot-footer a {
+    color: rgba(0, 0, 0, 0.557);
+    text-decoration: none;
+}
+.top-footer a {
+    color: rgba(0, 0, 0, 0.557);
+    text-decoration: none;
 }
