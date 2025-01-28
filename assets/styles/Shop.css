@@ -146,6 +146,9 @@ a{
 .selchion-size ul li{
     text-decoration: none;
 }
+.selchion-size ul li :hover{
+    background-color: var(--nooni-bg);
+}
 
 .selchion:hover .selchion-size {
     display: flex;
