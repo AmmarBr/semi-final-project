@@ -55,7 +55,6 @@ header {
     top: 0;
     overflow: hidden;
     z-index: 999;
-
 }
 
 .navigation {
@@ -116,104 +115,64 @@ header {
     color: black;
 }
 
-.about-p p {
-    font-size: 1.5rem;
-    text-align: center;
-    color: #0000009e;
+.img-scrol img {
+    height: 150px;
+    border-radius: 50%;
 }
 
-.bac-img {
-    height: 900px;
-    background-image: url(../imgs/about-parallax-1.jpg);
-    margin-bottom: 100px;
-    object-fit: contain;
-    background-position: 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
+.img-scrol img :hover {
+    height: 200px;
+    border-radius: 25%;
 }
 
-.left-img {
-
-    overflow: hidden;
-}
-
-.left-img img {
+.selchion-size {
+    display: none;
+    height: auto;
+    background-color: white;
+    top: 0;
+    left: 0;
     width: 100%;
-
 }
 
-.left-img:hover img {
-    transition: ease all 500ms;
-    transform: scale(1.1);
+a {
+    text-decoration: none;
 }
 
-.card {
-    border: 0;
-    text-align: center;
-    overflow: hidden;
-
-}
-.card-im {
-
-    overflow: hidden;
-}
-.card:hover img {
-    transition: ease all 500ms;
-    transform: scale(1.1);
-}
-.card-body p {
-    font-weight: 700;
+.selchion-size ul {
+    top: 15px;
+    z-index: 9;
+    width: 300px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.card-body h4 {
-    color: #0000008b;
-    cursor: pointer;
-    transition: ease all 500ms;
+.selchion-size ul li {
+    text-decoration: none;
 }
 
-.card-body h4:hover {
-    color: #ff00008b;
+.selchion-size ul li :hover {
+    background-color: var(--nooni-bg);
 }
 
-/* .card-im:hover .text-overlay{
-    display: flex !important;
-} */
-.text-overlay {
-    background-color: #00000047;
-    position: relative;
-    width: 100%;
-    height: 75.7%;
-    display: flex !important;
-    justify-content: center;
-    overflow: hidden;
-    align-content: center;
-    align-items: center;
-    align-items: end;
-}
-
-.text-overlay i {
-    width: 100%;
-    text-align: center;
-    color: white;
-}
-
-.text-overlay i:hover {
-    color: red;
-    cursor: pointer;
+.selchion:hover .selchion-size {
+    display: flex;
 }
 
 /*  */
 .hero {
-    position: relative;
+
     width: 100%;
-    height: 500px;
+    height: 810px;
     background: url('../imgs/about-2.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
-    margin-bottom: 100px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .hero::before {
@@ -223,7 +182,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); 
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .hero-content {
@@ -235,27 +194,36 @@ header {
     font-size: 3rem;
     margin-bottom: 10px;
 }
-
-.hero p {
-    font-size: 0.8rem;
-    margin-bottom: 20px;
+.contact{
+    z-index: 9;
 }
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background: white;
-    color: black;
-    font-size: 1rem;
-    text-decoration: none;
+.main-contact{
+    position: inherit;
+    top: -220px;
+    padding: 80px 90px;
+    z-index: 3;
+    background-color: white;
+}
+.main-contact input{
+   border: 1px solid black;
+   border-radius: 0;
+}
+.main-contact textarea{
+   border: 1px solid black;
+   border-radius: 0;
+}
+.form-control:focus{
+    box-shadow: none;
+    border-color: #000;
+}
+.contact-btn{
     border-radius: 0;
-    font-weight: bold;
-    transition: 0.3s;
+}
+.contact-btn:hover{
+    transition: ease all 500ms;
+    background-color: rgba(255, 0, 0, 0.789) !important;
 }
 
-.btn:hover {
-    background: #ff0000;
-}
 .main-footer {
     margin-top: 100px;
 }
@@ -286,3 +254,4 @@ header {
     color: rgba(0, 0, 0, 0.557);
     text-decoration: none;
 }
+

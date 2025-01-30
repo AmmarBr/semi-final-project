@@ -51,7 +51,10 @@ header {
     background-color: white;
     padding: 35px;
     border-bottom: rgba(0, 0, 0, 0.213) solid 1px;
-
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 999;
 
 }
 
