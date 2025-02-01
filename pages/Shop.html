@@ -20,7 +20,7 @@
 
 <body>
     <!-- start header -->
-    <div class="col-12 bg-black ">
+    <div class="col-12 bg-black w-100">
         <div class="container d-flex justify-content-between  ">
             <div class="text-white d-flex h-auto " id="top-nav">
                 <p>Up to 40% off Best-Selling Furniture.</p><a href="">shop now</a>
@@ -59,8 +59,8 @@
                     </div>
                 </div>
                 <img src="../assets/imgs/search-interface-symbol.png" alt="" class="search-interface" type="button"
-                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1" aria-controls="offcanvasRight">
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight1"
                     aria-labelledby="offcanvasRightLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasRightLabel">Search for products (0)</h5>
@@ -75,7 +75,7 @@
                     </div>
                 </div>
             </div>
-            <div class="logo col-8 d-flex justify-content-center gap-2">
+            <div class="logo col-6 d-flex justify-content-center gap-2">
                 <img src="../assets/imgs/logo.png" alt="" class="logo">
             </div>
             <div class="left-icon d-flex justify-content-end col-2 gap-2 position-relative">
@@ -125,7 +125,7 @@
                 <div class="img-scrol">
                     <img src="../assets/imgs/chair-1.jpg" alt="">
                 </div>
-                <div class="">
+                <div class="img-scrol-dis">
                     <h5>cher</h5>
                     <p>12 products</p>
                 </div>
@@ -134,7 +134,7 @@
                 <div class="img-scrol">
                     <img src="../assets/imgs/table.jpg" alt="">
                 </div>
-                <div class="">
+                <div class="img-scrol-dis">
                     <h5>Table</h5>
                     <p>5 products</p>
                 </div>
@@ -143,7 +143,7 @@
                 <div class="img-scrol">
                     <img src="../assets/imgs/bed.jpg" alt="">
                 </div>
-                <div class="">
+                <div class="img-scrol-dis">
                     <h5>Bad</h5>
                     <p>7 products</p>
                 </div>
@@ -152,7 +152,7 @@
                 <div class="img-scrol">
                     <img src="../assets/imgs/lamp-1.jpg" alt="">
                 </div>
-                <div class="">
+                <div class="img-scrol-dis">
                     <h5>Lamp</h5>
                     <p>7 products</p>
                 </div>
@@ -166,7 +166,7 @@
     </div>
     <div class="container main-hero d-flex  ">
 
-        <aside class="col-3 d-flex flex-column gap-3">
+        <aside class="col-3 d-sm-none d-lg-flex flex-column gap-3">
             <h4 class="col-12 " style="height: 50px; background-color: var(--nooni-bg); padding: 10px;">Type</h4>
             <div class="d-flex flex-column gap-3">
                 <div class="form-check">
@@ -490,21 +490,364 @@
                 </div>
             </div>
         </aside>
-        <div class=" col-9 d-flex flex-wrap ">
-            <div class="col-12 d-flex justify-content-between" style="max-height: 50px;">
-                <div class="d-flex col-1 " style="height: 50px;">
+        <div class=" col-12 col-lg-9 d-flex flex-wrap gap-2 ">
+            <div class="col-12 d-flex justify-content-between " style="max-height: 50px;">
+                <div class="d-sm-none d-lg-flex col-1 col-lg-1  dis-filt" style="height: 50px;">
                     <a href=""><img src="../assets/imgs/view.png" alt="" class="h-50"></a>
                     <a href=""><img src="../assets/imgs/grid.png" alt="" class="h-50"></a>
                 </div>
-                <div class=" col-11 d-flex justify-content-end gap-3">
-                    <div class="form-check h-100 d-flex align-items-center col-4 "
+                <div class=" col-12 col-lg-11 d-flex justify-content-sm-between justify-content-lg-end gap-2">
+                    <div class="form-check h-100 d-sm-none d-lg-flex align-items-center col-0 col-lg-4 dis-filt "
                         style="background-color: var(--nooni-bg);">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                         <label class="form-check-label" for="flexCheckDefault">
                             Show only products on sale
                         </label>
                     </div>
-                    <div class=" d-flex col-4 selchion" style="width: 300px;">
+                    <button class="btn btn-primary d-flex d-lg-none align-items-center offc-btn col-3" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight2    "
+                        aria-controls="offcanvasRight"><img src="../assets/imgs/filter.png" alt=""
+                            class="w-50 h-50 object-fit-contain">filtar</button>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight2"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <h4 class="col-12 " style="height: 50px; background-color: var(--nooni-bg); padding: 10px;">
+                                Type</h4>
+                            <div class="d-flex flex-column gap-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Bed(7)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Bedroom Furniture(18)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Cabinet(5)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Chair(12)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Dining & Kitchen(25)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Home Office(23)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Lamp(7)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Living Room(24)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        New & Now(33)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Outdoor Lounge(23)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Sofa(8)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Table(5)
+                                    </label>
+                                </div>
+
+                            </div>
+                            <h4 class="col-12 " style="height: 50px; background-color: var(--nooni-bg); padding: 10px;">
+                                Color</h4>
+                            <div class="d-flex flex-column gap-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Beige (12)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Black (5)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Blue (3)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Brown (6)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Chacoal (6)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Gold (3)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Green (8)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Pink (2)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Slate Grey (5)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Teak (9)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        White (6)
+                                    </label>
+                                </div>
+
+
+                            </div>
+                            <h4 class="col-12 " style="height: 50px; background-color: var(--nooni-bg); padding: 10px;">
+                                Price</h4>
+                            <div class="d-flex flex-column gap-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        $500 & Under
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        $500 - $999
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        $1,000 - $1,999
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        $2,000 - $5,000
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        $5,000 & Over
+                                    </label>
+                                </div>
+                            </div>
+                            <h4 class="col-12 " style="height: 50px; background-color: var(--nooni-bg); padding: 10px;">
+                                Material</h4>
+                            <div class="d-flex flex-column gap-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Concrete (3)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Fleece (2)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Glass (6)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Leather (3)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Marble (4)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Metal (15)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Velvet (9)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Wood (22)
+                                    </label>
+                                </div>
+                            </div>
+                            <h4 class="col-12 " style="height: 50px; background-color: var(--nooni-bg); padding: 10px;">
+                                Size</h4>
+                            <div class="d-flex flex-column gap-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        1-Seat (1)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        2-Seats (1)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        3-Seats (1)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        DEuro Sham (11)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        King (7)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        One Size (4)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Queen (5)
+                                    </label>
+                                </div>
+                            </div>
+                            <h4 class="col-12 " style="height: 50px; background-color: var(--nooni-bg); padding: 10px;">
+                                Patterns &
+                                Textures</h4>
+                            <div class="d-flex flex-column gap-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Abstract (3)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Floral (2)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Geometric (5)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Patterned (6)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Solid (20)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Textured (11)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Whimsical (10)
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" d-flex col-9 col-lg-4 selchion">
 
                         <div class="  col-12 d-flex align-items-center  justify-content-between  "
                             style="background-color: var(--nooni-bg);">Sort by latest <a href="">
@@ -524,7 +867,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-3  d-flex flex-wrap">
+            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-3 d-flex flex-wrap">
                 <div class="col">
                     <div class="card">
                         <div class="top-card1 position-relative">
@@ -788,7 +1131,7 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <div class="top-card2 position-relative flex-row-reverse">
+                        <div class="top-card8 position-relative flex-row-reverse">
                             <div class="p-card-icon d-flex position-absolute ">
                                 <div class="card-icon ">
                                     <i class="fa-regular fa-heart"></i>
@@ -822,7 +1165,7 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <div class="top-card2 position-relative flex-row-reverse">
+                        <div class="top-card9 position-relative flex-row-reverse">
                             <div class="p-card-icon d-flex position-absolute ">
                                 <div class="card-icon ">
                                     <i class="fa-regular fa-heart"></i>
@@ -856,7 +1199,7 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <div class="top-card2 position-relative flex-row-reverse">
+                        <div class="top-card10 position-relative flex-row-reverse">
                             <div class="p-card-icon d-flex position-absolute ">
                                 <div class="card-icon ">
                                     <i class="fa-regular fa-heart"></i>
@@ -890,7 +1233,7 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <div class="top-card2 position-relative flex-row-reverse">
+                        <div class="top-card11 position-relative flex-row-reverse">
                             <div class="p-card-icon d-flex position-absolute ">
                                 <div class="card-icon ">
                                     <i class="fa-regular fa-heart"></i>
@@ -924,7 +1267,7 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <div class="top-card2 position-relative flex-row-reverse">
+                        <div class="top-card12 position-relative flex-row-reverse">
                             <div class="p-card-icon d-flex position-absolute ">
                                 <div class="card-icon ">
                                     <i class="fa-regular fa-heart"></i>
@@ -958,7 +1301,7 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <div class="top-card2 position-relative flex-row-reverse">
+                        <div class="top-card13 position-relative flex-row-reverse">
                             <div class="p-card-icon d-flex position-absolute ">
                                 <div class="card-icon ">
                                     <i class="fa-regular fa-heart"></i>
@@ -992,7 +1335,7 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <div class="top-card2 position-relative flex-row-reverse">
+                        <div class="top-card14 position-relative flex-row-reverse">
                             <div class="p-card-icon d-flex position-absolute ">
                                 <div class="card-icon ">
                                     <i class="fa-regular fa-heart"></i>
@@ -1026,7 +1369,7 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                        <div class="top-card2 position-relative flex-row-reverse">
+                        <div class="top-card15 position-relative flex-row-reverse">
                             <div class="p-card-icon d-flex position-absolute ">
                                 <div class="card-icon ">
                                     <i class="fa-regular fa-heart"></i>
@@ -1058,22 +1401,18 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
     <!-- end herooo shop -->
     <!-- start  -->
     <nav aria-label="Page navigation example" style="margin-bottom: 100px;">
-        <ul class="pagination justify-content-center">
-            <li class="page-item disabled">
-                <a class="page-link">Previous</a>
-            </li>
+        <ul class="pagination justify-content-center gap-3 text-dark ">
             <li class="page-item"><a class="page-link" href="#">1</a></li>
             <li class="page-item"><a class="page-link" href="#">2</a></li>
             <li class="page-item"><a class="page-link" href="#">3</a></li>
             <li class="page-item">
-                <a class="page-link" href="#">Next</a>
+                <a class="page-link" href="#">>></a>
             </li>
         </ul>
     </nav>
@@ -1086,21 +1425,24 @@
                 <p>Text: +00(234)23-45-666</p>
                 <p>Mon – Fri: 8 am – 8 pm</p>
                 <p>Sat – Sun: 8 am – 7 pm</p>
+                <hr class="container d-none footer-hr">
             </div>
-            <div class="secound-top-footer col-12 col-md-2 d-flex flex-column justify-content-between">
-                <h5>ABOUT</h5>
-                <a href="http://">Our Story</a>
-                <a href="http://">Careers</a>
-                <a href="http://">Influencers</a>
-                <a href="http://">Join our team</a>
-            </div>
-            <div class="therd-top-footer col-12 col-md-3 d-flex flex-column justify-content-between">
-                <h3>CUSTOMER SERVICES</h3>
-                <a href="http://">Contact Us </a>
-                <a href="http://">Customer Service</a>
-                <a href="http://">Find Store</a>
-                <a href="http://">Book appointment</a>
-                <a href="http://">Shipping & Returns</a>
+            <div class="d-flex col-12 col-md-5 justify-content-between mid-top-footer">
+                <div class="secound-top-footer col-4 col-md-4 d-flex flex-column justify-content-between">
+                    <h5>ABOUT</h5>
+                    <a href="http://">Our Story</a>
+                    <a href="http://">Careers</a>
+                    <a href="http://">Influencers</a>
+                    <a href="http://">Join our team</a>
+                </div>
+                <div class="therd-top-footer col-8 col-md-8 d-flex flex-column justify-content-between">
+                    <h3>CUSTOMER SERVICES</h3>
+                    <a href="http://">Contact Us </a>
+                    <a href="http://">Customer Service</a>
+                    <a href="http://">Find Store</a>
+                    <a href="http://">Book appointment</a>
+                    <a href="http://">Shipping & Returns</a>
+                </div>
             </div>
             <div class="last-top-footer col-12 col-md-4">
                 <h3>SIGN UP FOR EMAILS</h3>
@@ -1121,10 +1463,11 @@
                     <img src="../assets/imgs/pinterest-logo.png" alt="">
                     <font-awesome-icon :icon="['fab', 'pinterest']" />
                 </div>
+                <hr class="container d-none footer-hr">
             </div>
         </div>
         <hr>
-        <div class="bot-footer d-flex justify-content-between">
+        <div class="bot-footer d-flex flex-sm-column flex-lg-row justify-content-between">
 
             <div class="first-bot-footer d-flex gap-4">
                 <a href="">Privacy Policy</a>

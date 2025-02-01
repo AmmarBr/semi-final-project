@@ -476,17 +476,20 @@ header {
 .p-card-icon:hover .card-icon,
 .p-card-icon:hover p {
     background-color: red;
+    color: white;
 
 }
 
 .s-card-icon:hover .card-icon,
 .s-card-icon:hover p {
     background-color: red;
+    color: white;
 }
 
 .th-card-icon:hover .card-icon,
 .th-card-icon:hover p {
     background-color: red;
+    color: #FFF;
 }
 
 
@@ -612,6 +615,7 @@ header {
     text-decoration: none;
 }
 
+
 /*  */
 @media (max-width: 1199px) {
     .img-l11 {
@@ -634,8 +638,20 @@ header {
 }
 
 @media (max-width: 767px) {
+    #top-nav {
+        font-size: 12px;
+    }
+
+    .main-user-icon {
+        display: none;
+    }
+
+    .carousel-item div h5 {
+        font-size: 16px;
+    }
+
     .img-l11 {
-        width: 220.345px;
+        width: 280.345px;
         height: 325px;
         object-position: center;
         object-fit: contain;
@@ -671,45 +687,55 @@ header {
     }
 
     .img-scrol img {
-        height: 100px;
+        height: 87px;
         border-radius: 50%;
+    }
+
+    .s-secshen h3 {
+        font-size: 20px;
     }
 
     .th-secshen-right-c {
         width: 100%;
-        padding: 40px 20px 20px 20px;
+        padding: 5px 20px 20px 20px;
         color: #FFF;
         text-align: center;
         align-items: center;
     }
 
     .th-secshen-right div h2 {
-        font-size: 35px;
+        font-size: 25px;
         font-weight: 400;
         letter-spacing: 0.05em;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
 
     .th-secshen-lift div h2 {
 
-        font-size: 35px;
+        font-size: 25px;
         font-weight: 400;
-        letter-spacing: 0.075em;
+        letter-spacing: 0.05em;
         margin-top: 20px;
         margin-bottom: 40px;
     }
 
     .th-lift-bot div {
-        padding: 20px 20px 20px 20px;
+        padding: 5px 20px 5px 0;
+    }
+
+    .th-secshen-foot img {
+        right: 0;
+        bottom: -40px;
+        transition: all ease-in-out 1s;
     }
 
     .th-lift-bot div h2 {
 
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 400;
         letter-spacing: 0.03em;
 
-        margin-bottom: 40px
+        margin-bottom: 0px
     }
 
     .th-secshen-foot {
@@ -725,27 +751,48 @@ header {
 
 
     .th-secshen-foot span {
-        font-size: 4rem;
+        font-size: 3.2rem;
         font-weight: 800;
     }
 
 
     .th-secshen-foot-p h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .th-secshen-foot-p p {
+        font-size: 1rem;
         text-align: center;
     }
 
     .f-card h1 {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
 
     .card {
-        height: 376px;
+        height: 350px;
+    }
+
+    .card-body {
+        max-height: 120px;
+        font-size: 12px;
+    }
+
+    .card button {
+        display: block;
+        font-size: 14px;
+
+    }
+
+    .card:hover button {
+        color: #FFF;
+
     }
 
     .s-carousel-s {
         flex-direction: column;
-        max-height: 55vh;
+        max-height: 56vh;
 
     }
 
@@ -757,9 +804,50 @@ header {
         justify-content: center;
     }
 
+    .text-overlay h1 {
+        font-size: 5rem;
+    }
+
+    .video-container {
+        height: 30vh;
+    }
+
+    .s-secshen div:first-of-type {
+        margin-bottom: 30px;
+    }
+
+    .s-secshen div:nth-child(2) {
+        margin-bottom: 30px;
+    }
+
+    .s-secshen div h5 {
+        font-size: 16px;
+    }
+
+    .s-secshen div p {
+        font-size: 11px;
+    }
+
+    .carousel-item div {
+        flex-direction: column !important;
+        align-items: center;
+        width: 100%;
+    }
+
+    .carousel-item div h1 {
+        font-size: large;
+    }
+
+    .carousel-item div p {
+        text-align: center;
+        font-size: medium;
+    }
+
+    .carousel-item {
+        font-size: large;
+    }
+
     .main-footer .top-footer {
-
-
         flex-direction: column;
         align-items: center;
         gap: 20px;
@@ -771,15 +859,50 @@ header {
 
     .secound-top-footer {
         align-items: center;
+        font-size: 14px;
     }
 
     .therd-top-footer {
         align-items: center;
+        font-size: 14px;
+    }
+
+    .therd-top-footer h3 {
+        font-size: 1.1rem;
     }
 
     .bot-footer {
         flex-direction: column;
         align-items: center;
         gap: 20px;
+    }
+
+    .last-top-footer {
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mid-top-footer {
+        order: 3;
+    }
+
+    .first-top-footer {
+        order: 2;
+    }
+
+    .footer-hr {
+        display: block !important;
+        margin: 50px 0;
+    }
+
+    .last-top-footer div:first-of-type {
+        width: 100%;
+    }
+
+    .foorter-icon img {
+        width: 100%;
+        height: 100%;
     }
 }
