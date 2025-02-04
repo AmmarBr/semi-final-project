@@ -635,6 +635,134 @@ header {
         object-fit: contain;
         max-width: 100%;
     }
+
+    .ml9 {
+        font-size: 2.2rem;
+    }
+
+    .th-lift-top div h2 {
+        font-size: 30px;
+    }
+
+    .th-lift-bot div {
+        padding: 15px 0;
+    }
+
+    .th-secshen-right-c {
+        padding: 20px;
+    }
+
+    .th-secshen-right div h2 {
+        font-size: 30px;
+        margin-bottom: 5px;
+
+    }
+
+    .th-secshen-foot {
+        padding: 20px;
+    }
+
+    .th-secshen-foot img {
+        display: flex;
+        right: -150px;
+    }
+
+    .th-secshen-foot-p {
+        z-index: 2;
+    }
+
+    .th-secshen-foot-p p {
+        font-weight: 600;
+    }
+
+    .f-card h1 {
+        font-size: 3.5rem;
+    }
+
+    .card {
+        border: 0;
+        height: 360px;
+    }
+
+    .card button {
+        display: block;
+
+    }
+
+    .s-carousel-s img {
+        object-fit: contain;
+    }
+
+    .s-Carosel {
+        padding: 15px;
+    }
+
+    .s-Carosel h1 {
+        font-size: 30px;
+    }
+
+    .s-Carosel p {
+        width: 50%;
+    }
+
+    .main-footer .top-footer {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100%;
+    }
+
+    .last-top-footer {
+        order: 1;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column
+    }
+
+    .last-top-footer hr {
+        display: block !important;
+    }
+
+    .first-top-footer hr {
+        display: block !important;
+    }
+
+    .first-top-footer {
+        order: 2;
+        width: 100%;
+        align-items: center;
+    }
+
+    .first-top-footer img {
+        width: 35% !important;
+    }
+
+    .mid-top-footer {
+        order: 3;
+        width: 100%;
+        align-items: center;
+    }
+
+    .foorter-icon {
+        width: 100%;
+    }
+
+    .foorter-icon img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .therd-top-footer {
+        width: 50%;
+    }
+
+    .bot-footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
 }
 
 @media (max-width: 767px) {

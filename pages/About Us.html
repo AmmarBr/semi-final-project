@@ -119,11 +119,11 @@
             consectetur risus nec ultricies.</p>
     </div>
     <div class="bac-img"></div>
-    <div class="container d-flex justify-content-between">
-        <div class="col-6 left-img">
+    <div class="container d-flex justify-content-between flex-wrap">
+        <div class="col-12 col-lg-6 left-img order-2  order-lg-1">
             <img src="../assets/imgs/about-3.jpg" alt="">
         </div>
-        <div class="d-flex flex-column gap-4 col-5 justify-content-around ">
+        <div class="d-flex flex-column gap-4 col-12 col-lg-5 justify-content-around order-1 order-lg-2 ">
             <h3>HOW WE WORKS</h3>
             <h5>Production Design</h5>
             <p>Integer dignissim sagittis quam. Maecenas sem eros, rutrum vitae risus eget, vulputate aliquam nisi.</p>
@@ -136,8 +136,8 @@
     <div class="container d-flex text-center align-items-center justify-content-center" >
         <h2 style="margin: 100px 0;">OUR TEAM</h2>
     </div>
-    <div class="container d-flex col-12 gap-1 gap-lg-5 flex-wrap" style="margin-bottom: 100px;">
-        <div class="card col-4 col-lg-2  " style="width: 18rem;">
+    <div class="container d-flex col-12 gap-5 gap-lg-3 flex-wrap flex-lg-nowrap" style="margin-bottom: 100px;">
+        <div class="card col-5 col-lg-3  " >
             <div class="card-im ">
                 <img src="../assets/imgs/team-1-254x300.jpg" class="card-img-top position-relative bg-black  "
                     alt="...">
@@ -155,7 +155,7 @@
                 <h4>John Hossain</h4>
             </div>
         </div>
-        <div class="card col-4 col-lg-2" style="width: 18rem;">
+        <div class="card col-5 col-lg-3" >
             <div class="card-im">
                 <img src="../assets/imgs/team-2.jpg" class="card-img-top" alt="...">
             </div>
@@ -170,7 +170,7 @@
                 <h4>Charlotte</h4>
             </div>
         </div>
-        <div class="card col-4 col-lg-2" style="width: 18rem;">
+        <div class="card col-5 col-lg-3" >
             <div class="card-im">
                 <img src="../assets/imgs/team-3.jpg" class="card-img-top" alt="...">
             </div>
@@ -185,7 +185,7 @@
                 <h4>Chris Petterson</h4>
             </div>
         </div>
-        <div class="card col-4 col-lg-2" style="width: 18rem;">
+        <div class="card col-5 col-lg-3" >
             <div class="card-im">
                 <img src="../assets/imgs/team-4.jpg" class="card-img-top" alt="...">
             </div>
@@ -220,34 +220,37 @@
     <!-- start footer -->
     <hr style="margin-top: 100px;">
     <div class="container main-footer">
-        <div class="top-footer col-12 d-flex flex-column flex-md-row ">
-            <div class="first-top-footer col-12 col-md-2 d-flex flex-column justify-content-between">
+        <div class="top-footer col-12 d-flex flex-column flex-md-column flex-lg-row  ">
+            <div class="first-top-footer col-12 col-md-12 col-lg-2 d-flex flex-column justify-content-between">
                 <img src="../assets/imgs/logo.png" alt="" style="object-fit: contain; width: 70%; margin-bottom: 30px;">
                 <p>Text: +00(234)23-45-666</p>
                 <p>Mon – Fri: 8 am – 8 pm</p>
                 <p>Sat – Sun: 8 am – 7 pm</p>
+                <hr class="container d-none footer-hr">
             </div>
-            <div class="secound-top-footer col-12 col-md-2 d-flex flex-column justify-content-between">
-                <h5>ABOUT</h5>
-                <a href="http://">Our Story</a>
-                <a href="http://">Careers</a>
-                <a href="http://">Influencers</a>
-                <a href="http://">Join our team</a>
+            <div class="d-flex col-12 col-md-12 col-lg-5 justify-content-between mid-top-footer">
+                <div class="secound-top-footer col-4 col-md-4 d-flex flex-column justify-content-between">
+                    <h5>ABOUT</h5>
+                    <a href="http://">Our Story</a>
+                    <a href="http://">Careers</a>
+                    <a href="http://">Influencers</a>
+                    <a href="http://">Join our team</a>
+                </div>
+                <div class="therd-top-footer col-8 col-md-8 d-flex flex-column justify-content-between">
+                    <h3>CUSTOMER SERVICES</h3>
+                    <a href="http://">Contact Us </a>
+                    <a href="http://">Customer Service</a>
+                    <a href="http://">Find Store</a>
+                    <a href="http://">Book appointment</a>
+                    <a href="http://">Shipping & Returns</a>
+                </div>
             </div>
-            <div class="therd-top-footer col-12 col-md-3 d-flex flex-column justify-content-between">
-                <h3>CUSTOMER SERVICES</h3>
-                <a href="http://">Contact Us </a>
-                <a href="http://">Customer Service</a>
-                <a href="http://">Find Store</a>
-                <a href="http://">Book appointment</a>
-                <a href="http://">Shipping & Returns</a>
-            </div>
-            <div class="last-top-footer col-12 col-md-4">
+            <div class="last-top-footer col-12 col-md-12 col-lg-4">
                 <h3>SIGN UP FOR EMAILS</h3>
                 <p>Enjoy 15% off* your first order when sign up to our newsletter</p>
                 <div>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="your e-mail address"
+                        <input type="text" class="form-control p-2" placeholder="your e-mail address"
                             aria-label="Recipient's username" aria-describedby="button-addon2">
                         <button class="btn btn-outline-dark bg-black footer-btn " type="button"
                             id="button-addon2">SUBSECRIBE</button>
@@ -261,6 +264,7 @@
                     <img src="../assets/imgs/pinterest-logo.png" alt="">
                     <font-awesome-icon :icon="['fab', 'pinterest']" />
                 </div>
+                <hr class="container d-none footer-hr">
             </div>
         </div>
         <hr>
